@@ -4,7 +4,7 @@ var app = express.createServer(express.logger());
 
 var respuesta;
 
-fs.readFile('/etc/passwd', function (err, data) {
+fs.readFile('index.html', function (err, data) {
   if (err) throw err;
   respuesta = data.toString();
 });
