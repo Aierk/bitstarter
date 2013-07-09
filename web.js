@@ -3,7 +3,7 @@ var express = require('express');
 var app = express.createServer(express.logger());
 
 var respuesta;
-
+var fs = require('fs');
 fs.readFile('index.html', function (err, data) {
   if (err) throw err;
   respuesta = data.toString();
